@@ -5,10 +5,33 @@ Este é um projeto para matéria de Projeto e Implementação Orientado a Objeto
 
 O projeto consistem em um CRUD de livros lidos por uma pessoa onde o usuário pode registrar o livro que já leu e deixar uma avaliação, podendo também fazer edição e exclusão do livro.
 
+## Stack utilizada
+
+**Linguagem de programação:** Java 8
+
+**Framework:** Spring Web MVC
+
+**Banco de dados:** Mysql
+
+**ORM:** JPA Hibernate
+
+**Template Engine:** JSP
+
+## O que você precisa
+
+`Mysql 5.6 ou uma versão maior`
+
+`JDK 1.8 ou uma versão maior`
+
+Criar uma base de dados com o nome `projeto_pos` ou customizar as configurações no arquivo `src/main/resources/application.properties`:
+
+ ```
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/{BASE_DE_DADOS}
+spring.datasource.username={USUARIO}
+spring.datasource.password={SENHA}
+ ```
 
 ## Executando o projeto
-
-Crie uma base de dados com o nome `projeto_pos` ou altere o nome
 
 Clone o projeto
 
@@ -27,11 +50,4 @@ Inicie o projeto
 ```bash
   mvnw spring-boot:run
 ```
-
-
-## Stack utilizada
-
-**Front-end:** React, Redux, TailwindCSS
-
-**Back-end:** Node, Express
 
